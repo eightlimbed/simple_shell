@@ -1,44 +1,28 @@
-# Simple_shell
+### Simple Shell
 
-Write a simple `UNIX` command interpreter in C
+A UNIX command interpreter built from scratch, written in C without using any of the standard library functions. By [Lee Gaines](https://github.com/eightlimbed) and [Liz Magalindan](https://github.com/magezil/).
 
-## Compilation
+### Compilation
 
-`gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
+```
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+```
 
-## Usage
+### Usage
 
-### Interactive mode
-`$ ./hsh
+#### Interactive mode
+```
+$ ./hsh
 hsh$ /bin/ls
 hsh main.c shell.c
 hsh$
 hsh$ exit
-$ `
+$ 
+```
 
 ### Non-interactive mode
-`$ echo "/bin/ls" | ./hsh
+```
+$ echo "/bin/ls" | ./hsh
 hsh main.c shell.c
-$`
-
-## Files
-
-### README.md
-README file for simple shell
-
-### man_1_simple_shell
-man page for simple shell
-
-### AUTHORS
-Contributing authors for this project
-
-### shell.h
-Header file for simple shell program
-
-### shell.c
-Program that runs simple shell
-
-Other files included contain helper functions for the simple shell
-
-## `/tests`
-Folder contains all tests
+$
+```
